@@ -1,6 +1,6 @@
 ---
 name: alt-text
-description: Write, review, or fix alt text for images in HTML, Markdown, or other documents. Use when adding images to content, generating image descriptions, auditing accessibility, or when asked about alt text, image descriptions, or text alternatives for screen reader users.
+description: Write, review, or fix alt text for images in HTML, Markdown, or other documents. Use when adding images to content, generating image descriptions, or when asked about alt text, image descriptions, or text alternatives for screen reader users.
 ---
 
 # Writing alt text
