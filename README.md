@@ -15,7 +15,7 @@ When an agent with this skill adds images to content, reviews a page, or is aske
 
 Missing and poor alt text is consistently the most common accessibility failure on the web — the [WebAIM Million](https://webaim.org/projects/million/) survey finds roughly one in five home-page images has no text alternative at all. Multimodal agents now write a lot of the web's content, and their default behavior (fluent, context-free image descriptions) reproduces the exact anti-patterns that accessibility guidance warns about. This skill encodes the guidance from [WCAG 2.2](https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html), the HTML spec, [WebAIM](https://webaim.org/techniques/alttext/), and [Section508.gov](https://www.section508.gov/create/alternative-text/) into the compact form an agent needs at write time.
 
-Accessibility practitioners broadly agree that automated alt text works best as a **reviewed draft**, and the skill is designed for that: it tells the agent to flag low-confidence output and surface assumptions rather than assert them.
+Accessibility guidance generally treats automated alt text as a **draft for human review**, and the skill is designed for that: it tells the agent to flag low-confidence output and surface assumptions rather than assert them.
 
 ## Installation
 
