@@ -5,7 +5,7 @@ description: Write, review, or fix alt text for images in HTML, Markdown, or oth
 
 # Writing alt text
 
-Alt text is a **replacement** for the image, not a description of it. The test: imagine reading the page aloud over the phone without mentioning that an image is present — the alt text is what you say in the image's place. If swapping every image for its alt text would leave the page's meaning unchanged, the alt text is right.
+Alt text is a **replacement** for the image, not a description of it. The test: imagine reading the page aloud over the phone without mentioning that an image is present — the alt text is what you say in the image's place, and the page's meaning should be unchanged.
 
 There is no single correct alt text for an image. The same logo needs `alt="The XYZ company"` as a page heading, `alt=""` next to the company's name, and a visual description in an article about the logo's design. Determine the image's purpose in context first; only then write.
 
@@ -16,7 +16,7 @@ Work through these in order; the first match decides the approach.
 1. **Functional — is the image inside a link or button?** Alt conveys the action or destination, not the picture: a printer icon that prints gets `Print`, not `Printer icon`. If adjacent text already states the function, alt carries only the image's added information (`PDF`) or is empty. An image that is a link's *only* content must never have empty alt — derive the alt from the link's destination if nothing else is available.
 2. **Decorative or redundant?** If removing the image loses no information, or its content is already in adjacent text or a caption, use `alt=""`. Describing decorative images adds noise, and duplicating a caption makes screen reader users hear it twice.
 3. **Contains text?** Reproduce it verbatim — for memes and screenshots of text this is the single most important rule. Then, if useful, add the visual context (for memes: the base image or character and the action). If the identical text appears as real text nearby, the image is redundant → `alt=""`.
-4. **Logo?** Alt is the entity's name (`Acme Corporation`), never the word "logo" — the logo conveys the entity, not its own logo-ness.
+4. **Logo?** Alt is the entity's name (`Acme Corporation`), never the word "logo" — the logo conveys the entity, not its own logo-ness. This holds even for the common logo-that-links-home case, which matched step 1: the entity name doubles as the destination label.
 5. **Complex — chart, graph, diagram, map, infographic?** Use the two-part pattern in the next section. Don't try to fit it all in alt.
 6. **Informative photo or illustration?** Brief description of what matters *for this context*: a bird photo on a parks site needs only a passing mention; the same photo on a birding site needs plumage detail. Detail that doesn't serve the page's purpose is noise.
 7. **Key content — gallery, comic, artwork, a screenshot being discussed?** Full replacement text conveying everything the image contributes.
