@@ -19,25 +19,32 @@ Accessibility guidance generally treats automated alt text as a **draft for huma
 
 ## Installation
 
-### Claude Code
+### Claude Code (plugin)
 
-Clone into your personal skills directory:
-
-```bash
-git clone https://github.com/brendanlong/alt-text-skill.git ~/.claude/skills/alt-text
-```
-
-Or add it to a single project (checked into the repo, shared with your team):
+Register this repo as a marketplace (one-time):
 
 ```bash
-git clone https://github.com/brendanlong/alt-text-skill.git .claude/skills/alt-text
+claude plugin marketplace add brendanlong/alt-text-skill
 ```
 
-That's it — Claude Code discovers skills automatically. The skill activates when Claude works with images in Markdown or HTML, or you can invoke it explicitly by mentioning alt text. See the [Claude Code skills documentation](https://code.claude.com/docs/en/skills) for more on how skills are loaded.
+Install the plugin:
 
-### Other agents
+```bash
+claude plugin install alt-text@alt-text-skill
+```
 
-Any tool that supports the [Agent Skills format](https://agentskills.io/) (a `SKILL.md` with YAML frontmatter) can use this skill — point it at the cloned directory.
+Restart Claude Code for the skill to take effect. It activates when Claude works with images in Markdown or HTML, or you can invoke it explicitly by mentioning alt text. See the [Claude Code plugins documentation](https://code.claude.com/docs/en/plugins) for more.
+
+### Updating
+
+```bash
+claude plugin marketplace update alt-text-skill
+claude plugin update alt-text@alt-text-skill
+```
+
+### Manual install / other agents
+
+The skill itself is the single file [`plugins/alt-text/skills/alt-text/SKILL.md`](plugins/alt-text/skills/alt-text/SKILL.md). For a plugin-free Claude Code install, copy that directory to `~/.claude/skills/alt-text` (personal) or `.claude/skills/alt-text` (per-project). Any other tool that supports the [Agent Skills format](https://agentskills.io/) can use it the same way — point the tool at that directory.
 
 ## Sources
 
