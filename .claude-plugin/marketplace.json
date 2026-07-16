@@ -1,0 +1,16 @@
+{
+  "name": "alt-text-skill",
+  "owner": {
+    "name": "Brendan Long",
+    "email": "self@brendanlong.com"
+  },
+  "plugins": [
+    {
+      "name": "alt-text",
+      "description": "Write standards-compliant alt text for images in HTML and Markdown, following the W3C/WHATWG decision procedure",
+      "source": "./plugins/alt-text",
+      "category": "accessibility",
+      "version": "0.1.0"
+    }
+  ]
+}

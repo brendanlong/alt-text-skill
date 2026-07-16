@@ -1,0 +1,8 @@
+{
+  "name": "alt-text",
+  "description": "Write standards-compliant alt text for images in HTML and Markdown, following the W3C/WHATWG decision procedure",
+  "author": {
+    "name": "Brendan Long",
+    "email": "self@brendanlong.com"
+  }
+}
